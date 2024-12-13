@@ -1,0 +1,9 @@
+@import '@angular/material/prebuilt-themes/azure-blue.css';
+
+.flexExpand {
+    flex: 1 1 auto;
+}
+
+.mat-toolbar {
+    background: #b8b5c1;
+}

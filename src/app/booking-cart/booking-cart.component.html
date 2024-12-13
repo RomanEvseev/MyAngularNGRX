@@ -1,0 +1,3 @@
+<button type="button" class="btn btn-primary" (click)="showBookCart()">
+    Book cart <span class="badge bg-secondary">{{ (cart$ | async).length }}</span>
+</button>

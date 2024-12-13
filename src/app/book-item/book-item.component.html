@@ -1,0 +1,16 @@
+<div class="p-2" *ngFor="let book of books">
+    <mat-card appearance="outlined">
+        <mat-card-content>
+            <mat-card-title>{{book.title}}</mat-card-title>
+        </mat-card-content>
+        <mat-card-header>
+            <mat-card-subtitle>Author: {{book.author}} </mat-card-subtitle>
+            <mat-card-subtitle>Pages: {{book.pagecount}}</mat-card-subtitle>
+            <mat-card-subtitle>Price: ${{book.price}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-actions align="end">
+            <app-add-book-to-cart-action [book]="book"></app-add-book-to-cart-action>
+            <!--app-cart-actions [book]="book"></app-cart-actions-->
+        </mat-card-actions>
+    </mat-card>
+</div>
